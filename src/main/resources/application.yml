@@ -1,0 +1,32 @@
+# 인코딩 서버 세팅
+server:
+  port: 8080
+  servlet: #상대방의 데이터를 utf-8로 설정하여 받는다.
+    encoding:
+      charset: utf-8
+      enabled: true
+      
+#H2 DB를 사용해주기 위해 기본적으로 세팅
+#서버가 실행될 때 마다 바뀌는 JDBC를 고정해주는 세팅입니다.
+#spring:
+#  datasource:
+#    url: jdbc:h2:mem:cosdb
+#    driver-class-name: org.h2.Driver
+#    username: sa
+#    password: 
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test?serverTimezone=Asia/Seoul
+    username: root
+    password: 1234
+    
+#JPA 세팅
+  jpa:
+    hibernate:
+      ddl-auto: create # create, update, none
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl # 모델명 대로 DB 생성 전략
+    show-sql: true # DB에 실행되는 sql문을 콘솔에 출력한다.
+     

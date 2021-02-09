@@ -1,0 +1,74 @@
+= REST Service API Guide
+:doctype: books
+:icons: font
+:source-highlighterr: highlightjs
+:toc: left
+:toclevels: 4
+:sectlinks:
+
+= Resources
+
+== book REST Service
+
+The book provides the entry point into the service.
+
+=== Accessing the book GET with provided content
+
+==== Request structure
+
+== 글 저장 [POST]
+
+글 저장
+
+
+include::{snippets}/books-controller-integre-test/save_테스트/curl-request.adoc[]
+
+=== 요청 구조
+
+include::{snippets}/books-controller-integre-test/save_테스트/http-request.adoc[]
+
+==== 응답 구조
+
+include::{snippets}/books-controller-itegre-test/save_테스트/http-response.adoc[]
+
+=== 요청 바디
+
+include::{snippets}/books-controller-integre-test/save_테스트/request-body.adoc[]
+
+==== 응답 바디
+
+include::{snippets}/books-controller-integre-test/save_테스트/response-body.adoc[]
+
+
+
+== 글 수정 [put]
+
+글 수정
+
+
+include::{snippets}/books-controller-integre-test/update_테스트/curl-request.adoc[]
+
+=== 요청 구조
+
+include::{snippets}/books-controller-integre-test/update_테스트/http-request.adoc[]
+
+==== 응답 구조
+
+include::{snippets}/books-controller-integre-test/update_테스트/http-response.adoc[]
+
+=== 요청 바디
+
+include::{snippets}/books-controller-integre-test/update_테스트/request-body.adoc[]
+
+==== 응답 바디
+
+include::{snippets}/books-controller-integre-test/update_테스트/response-body.adoc[]
+
+
+==== 요청 필드
+
+include::{snippets}/books-controller-integre-test/update_테스트/request-fields.adoc[]
+
+==== 응답 필드
+
+include::{snippets}/books-controller-integre-test/update_테스트/response-fields.adoc[]
